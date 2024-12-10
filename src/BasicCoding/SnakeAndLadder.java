@@ -13,7 +13,7 @@ public class SnakeAndLadder {
             int roll = random.nextInt(6) + 1;
             player1 += roll;
             System.out.println("Player 1 rolls a " + roll + " and moves to " + player1);
-            if (player1 == 99) {
+            if (player1 == 100) {
                 System.out.println("Player 1 wins!");
                 break;
             } else if (player1 > target) {
@@ -24,7 +24,7 @@ public class SnakeAndLadder {
             roll = random.nextInt(6) + 1;
             player2 += roll;
             System.out.println("Player 2 rolls a " + roll + " and moves to " + player2);
-            if (player2 == 99) {
+            if (player2 == 100) {
                 System.out.println("Player 2 wins!");
                 break;
             } else if (player2 > target) {

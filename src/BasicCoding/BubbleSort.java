@@ -11,12 +11,12 @@ public class BubbleSort {
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                 }
-            }
                 System.out.print("Step " + (i + 1) + ": ");
                 for (int value : array) {
                     System.out.print(value + " ");
                 }
                 System.out.println();
+            }
         }
     }
 
