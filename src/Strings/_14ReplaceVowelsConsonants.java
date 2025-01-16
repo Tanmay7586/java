@@ -2,7 +2,7 @@ package Strings;
 
 import java.util.Scanner;
 
-public class _15ReplaceVowelsConsonants {
+public class _14ReplaceVowelsConsonants {
 
     public static void main(String[] args) {
 

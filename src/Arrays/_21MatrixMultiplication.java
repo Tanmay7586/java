@@ -29,6 +29,7 @@ public class _21MatrixMultiplication {
             System.out.println("invalid");
         }
 
+
         int[][] prod = new int[row1][col2];
 
         for (int i = 0; i < prod.length; i++) {

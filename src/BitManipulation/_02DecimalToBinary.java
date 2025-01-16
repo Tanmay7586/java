@@ -1,6 +1,6 @@
-package BasicCoding;
+package BitManipulation;
 
-public class DecimalToBinary {
+public class _02DecimalToBinary {
     public static void main(String[] args) {
         int decimalNum = 42;
         StringBuilder sb = new StringBuilder();

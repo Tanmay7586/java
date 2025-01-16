@@ -38,6 +38,4 @@ public class _17PairSum {
         }
         System.out.println(count);
     }
-
-
 }

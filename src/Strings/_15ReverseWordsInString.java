@@ -1,6 +1,6 @@
 package Strings;
 
-public class _18ReverseWordsInString {
+public class _15ReverseWordsInString {
     public static void main(String[] args) {
         String sentence = "The  quick brown  fox";
         System.out.println(reversedString(sentence));

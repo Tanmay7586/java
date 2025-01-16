@@ -12,7 +12,7 @@ public class _14FindCommonElementsinThreeSortedArrays {
         int y = 0;
         int z = 0;
 
-        ArrayList al = new ArrayList();
+        ArrayList<Integer> al = new ArrayList<Integer>();
 
         while (x < a1.length && y < a2.length && z < a3.length) {
             if (a1[x] == a2[y] && a2[y] == a3[z]) {
@@ -28,7 +28,22 @@ public class _14FindCommonElementsinThreeSortedArrays {
                 z++;
             }
         }
-
-        System.out.println(al);
+            System.out.println(al);
+//        while (x < a1.length && y < a2.length && z < a3.length) {
+//            if (a1[x] == a2[y] && a2[y] == a3[z]) {
+//                al.add(a1[x]);
+//                x++;
+//                y++;
+//                z++;
+//            } else if (a1[x] < a2[y]) {
+//                x++;
+//            } else if (a2[y] < a3[z]) {
+//                y++;
+//            } else {
+//                z++;
+//            }
+//        }
+//
+//        System.out.println(al);
     }
 }
