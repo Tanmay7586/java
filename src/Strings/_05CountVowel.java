@@ -5,21 +5,27 @@ import java.util.Scanner;
 public class _05CountVowel {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
         String str = sc.nextLine();
-        System.out.println(countVowels(str));
+
+        int[] result = countVowelsAndConsonants(str);
+        System.out.println("Vowels: " + result[0]);
+        System.out.println("Consonants: " + result[1]);
     }
 
-    static int countVowels(String str) {
-        int count = 0;
+    static int[] countVowelsAndConsonants(String str) {
+        int countVowels = 0;
+        int countConsonants = 0;
+
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' ||
-                    str.charAt(i) == 'i' || str.charAt(i) == 'o' ||
-                    str.charAt(i) == 'u' || str.charAt(i) == 'A' ||
-                    str.charAt(i) == 'E' || str.charAt(i) == 'O' ||
-                    str.charAt(i) == 'U') {
-                count++;
+            char ch = Character.toLowerCase(str.charAt(i));
+
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+                countVowels++;
+            } else {
+                countConsonants++;
             }
         }
-        return count;
+        return new int[]{countVowels, countConsonants};
     }
 }
