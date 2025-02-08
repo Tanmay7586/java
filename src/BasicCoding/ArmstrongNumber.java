@@ -2,7 +2,6 @@ package BasicCoding;
 
 import java.util.Scanner;
 
-
 public class ArmstrongNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -24,12 +23,20 @@ public class ArmstrongNumber {
     public static boolean isArmstrong(int num) {
         int originalNumber = num;
         int result = 0;
-        int digits = String.valueOf(num).length(); // Find the number of digits
+        int digits = 0;
+        int temp = num; // Store the original number to count digits
 
-        while (num > 0) {
-            int digit = num % 10; // Get the last digit
+        while (temp > 0) {
+            temp /= 10;
+            digits++;
+        }
+
+        temp = num; // Reset num to original value for digit processing
+
+        while (temp > 0) {
+            int digit = temp % 10; // Get the last digit
             result += Math.pow(digit, digits); // Add the power of the digit
-            num /= 10; // Remove the last digit
+            temp /= 10; // Remove the last digit
         }
 
         return result == originalNumber; // Check if the result equals the original number
