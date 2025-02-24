@@ -9,11 +9,12 @@ public class Fibonacci {
 
         int first_num = 0;
         int sec_num = 1;
+        System.out.print(first_num + " " + sec_num);
         int nextnum;
 
-        for (int i = 1; i <= num; i++) {
-            System.out.println(first_num);
+        for (int i = 3; i <= num; i++) {
             nextnum = first_num + sec_num;
+            System.out.print(" "+nextnum + " ");
             first_num = sec_num;
             sec_num = nextnum;
         }

@@ -21,24 +21,19 @@ public class ArmstrongNumber {
     }
 
     public static boolean isArmstrong(int num) {
-        int originalNumber = num;
-        int result = 0;
-        int digits = 0;
-        int temp = num; // Store the original number to count digits
-
-        while (temp > 0) {
+        int originalNum = num;
+        int ans = 0;
+        int digitCount = 0;
+        while (originalNum != 0) {
+            originalNum /= 10;
+            digitCount++;
+        }
+        int temp = num;
+        while (temp != 0) {
+            int digit = temp % 10;
+            ans += Math.pow(digit, digitCount);
             temp /= 10;
-            digits++;
         }
-
-        temp = num; // Reset num to original value for digit processing
-
-        while (temp > 0) {
-            int digit = temp % 10; // Get the last digit
-            result += Math.pow(digit, digits); // Add the power of the digit
-            temp /= 10; // Remove the last digit
-        }
-
-        return result == originalNumber; // Check if the result equals the original number
+        return ans == num;
     }
 }

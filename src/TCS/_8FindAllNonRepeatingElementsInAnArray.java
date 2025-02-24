@@ -1,8 +1,10 @@
 package TCS;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
 
-public class _7FindAllRepeatingElementsInAnArray {
+public class _8FindAllNonRepeatingElementsInAnArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -22,8 +24,8 @@ public class _7FindAllRepeatingElementsInAnArray {
         }
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if (entry.getValue() > 1) {
-                System.out.println(entry.getKey() + " " + entry.getValue());
+            if (entry.getValue() == 1) {
+                System.out.println(entry.getKey() + " ");
             }
         }
     }

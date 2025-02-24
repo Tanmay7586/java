@@ -1,8 +1,9 @@
-package Arrays;
+package TCS;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Scanner;
 
-public class _25Frequencyofeachelementinanarray {
+public class _3Frequencyofeachelementinanarray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

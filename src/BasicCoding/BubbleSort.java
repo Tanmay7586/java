@@ -11,6 +11,7 @@ public class BubbleSort {
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
                 }
+                // Display the array after each pass
                 System.out.print("Step " + (i + 1) + ": ");
                 for (int value : array) {
                     System.out.print(value + " ");
@@ -21,7 +22,7 @@ public class BubbleSort {
     }
 
     public static void main(String[] args) {
-        int[] arr = {64, 34, 25, 12, 22, 11, 90};
+        int[] arr = {64, 34, 25, 12, 22, 11};
         bubbleSort(arr);
         System.out.println("Bubble Sorted Array:");
         for (int value : arr) {

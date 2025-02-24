@@ -1,8 +1,9 @@
-package Arrays;
+package TCS;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class _26RearrangeArrayInIncreasingDecreasing {
+public class _4RearrangeArrayInIncreasingDecreasing {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

@@ -1,9 +1,9 @@
-package Arrays;
+package TCS;
 
 import java.util.Arrays;
 import java.util.LinkedHashSet;
 
-public class _5RemoveDuplicateFromArray {
+public class _1RemoveDuplicateFromArray {
     public static void main(String[] args) {
         int[] nums = {2, 1, 4, 2, 6, 8, 4, 3};
 

@@ -1,8 +1,9 @@
-package Arrays;
+package TCS;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class _29AddingElementInAnArray {
+public class _6AddingElementInAnArray {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

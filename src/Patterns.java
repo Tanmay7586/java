@@ -154,25 +154,24 @@
 // 7 8 9 10
 // 11 12 13 14 15
 
-// import java.util.*;
+ import java.util.*;
 
-// public class Patterns {
-//     public static void main(String[] args) {
-//         Scanner sc = new Scanner(System.in);
-//         int n = sc.nextInt();
-//         int num = 1;
-//         for (int i = 1; i <= n; i++) {
-//             for (int j = 1; j <=i; j++) {
-//                 int sum = i + j;
-//                 if(sum%2==0){
-//                     System.out.print("1");
-//                 }else{System.out.print("0");}
-//                 System.out.print(" ");
-//             }
-//             System.out.println("");
-//         }
-//     }
-// }
+ public class Patterns {
+     public static void main(String[] args) {
+         Scanner sc = new Scanner(System.in);
+         int n = sc.nextInt();
+         for (int i = 1; i <= n; i++) {
+             for (int j = 1; j <=i; j++) {
+                 int sum = i + j;
+                 if(sum%2==0){
+                     System.out.print("1");
+                 }else{System.out.print("0");}
+                 System.out.print(" ");
+             }
+             System.out.println("");
+         }
+     }
+ }
 
 // 1  
 // 0 1

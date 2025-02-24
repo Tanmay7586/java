@@ -1,4 +1,5 @@
 package BasicCoding;
+
 public class InsertionSort {
     public static void insertionSort(int[] array) {
         int n = array.length;
@@ -10,11 +11,11 @@ public class InsertionSort {
                 j--;
             }
             array[j + 1] = key;
-            System.out.print("Step " + (i ) + ": ");
-            for (int value : array) {
-                System.out.print(value + " ");
+            for (int num : array) {
+                System.out.print(num + " ");
             }
-            System.out.println();
+            System.out.println(" ");
+
         }
     }
 

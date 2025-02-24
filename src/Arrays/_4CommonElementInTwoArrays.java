@@ -14,19 +14,11 @@ public class _4CommonElementInTwoArrays {
 
         for (int num : a2) {
             if (hs.contains(num)) {
-            System.out.println(num);
+                System.out.println(num);
                 hs.remove(num);
             }
 
 
         }
-
-//        for (int i = 0; i < a1.length; i++) {
-//            for (int j = 0; j < a2.length; j++) {
-//                if(a1[i]==a2[j]){
-//                    System.out.println(a1[i]);
-//                }
-//            }
-//        }
     }
 }

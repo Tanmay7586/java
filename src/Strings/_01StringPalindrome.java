@@ -4,16 +4,14 @@ import java.util.Scanner;
 
 public class _01StringPalindrome {
     public static void main(String[] args) {
-        System.out.println(isPalindrome("tanmay"));
+        System.out.println(isPalindrome("madam"));
     }
 
     static boolean isPalindrome(String str) {
-        int i = 0, j = str.length() - 1;
+        int i = 0;
+        int j = str.length() - 1;
         while (i < j) {
-            char left = str.charAt(i);
-            char right = str.charAt(j);
-
-            if (left != right) {
+            if (str.charAt(i) != str.charAt(j)) {
                 return false;
             }
             i++;
@@ -49,3 +47,6 @@ public class _01StringPalindrome {
 //        return og_str.equals(rev_str);
 //    }
 //}
+
+
+
